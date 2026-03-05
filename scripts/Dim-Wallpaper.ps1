@@ -112,6 +112,7 @@ if ((Test-Path -LiteralPath $dimmedPath) -and (Test-Path -LiteralPath $originalP
         $dimmedResolved = (Resolve-Path -LiteralPath $dimmedPath).Path
         if ([string]::Equals($sourceResolved, $dimmedResolved, [System.StringComparison]::OrdinalIgnoreCase)) {
             Set-Wallpaper -Path $dimmedPath
+            Set-LockScreenImage -Path $dimmedPath
             return
         }
     }
