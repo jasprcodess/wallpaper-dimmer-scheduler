@@ -1,0 +1,5 @@
+# Generated runtime files
+*.log
+
+# Keep repo clean from local copies
+Thumbs.db
